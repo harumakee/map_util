@@ -10,6 +10,8 @@ if __name__ == "__main__":
     args = sys.argv
 
     if len(args) >= 2:
+
+        
         if args[1] == "--help":
             print("usage")
         # TODO: ファイル出力を実装
