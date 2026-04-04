@@ -38,7 +38,10 @@ if __name__ == "__main__":
                 if point == "end":
                     break
                 else:
-                    point_list.append(Point(point))
+                    try:
+                        point_list.append(Point(point))
+                    except ValueError:
+                        print("IGNORE: Invalid Point!!!")
 
             area_list.append(Area(name, point_list, max_altitude).make_area())
 
